@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="320" viewBox="0 0 850 320">
+  <defs>
+    <style>
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      .bg { fill: #0d1117; }
+      .titlebar { fill: #161b22; }
+      .text { font-family: 'Consolas', 'Courier New', monospace; font-size: 14px; }
+      .prompt { fill: #7ee787; }
+      .cmd { fill: #c9d1d9; }
+      .accent { fill: #58a6ff; font-weight: bold; }
+      .muted { fill: #8b949e; }
+      .key { fill: #79c0ff; }
+      .val { fill: #c9d1d9; }
+      .sep { fill: #30363d; }
+      .title { fill: #8b949e; font-family: 'Consolas', 'Courier New', monospace; font-size: 12px; }
+
+      .l { opacity: 0; animation: fadeIn 0.4s ease-out forwards; }
+      .l1  { animation-delay: 0.3s; }
+      .l2  { animation-delay: 0.8s; }
+      .l3  { animation-delay: 1.0s; }
+      .l4  { animation-delay: 1.2s; }
+      .l5  { animation-delay: 1.4s; }
+      .l6  { animation-delay: 1.6s; }
+      .l7  { animation-delay: 1.8s; }
+      .l8  { animation-delay: 2.0s; }
+      .l9  { animation-delay: 2.2s; }
+      .l10 { animation-delay: 2.5s; }
+      .l11 { animation-delay: 2.8s; }
+
+      .cursor { animation: blink 1s step-end infinite; }
+    </style>
+  </defs>
+
+  <!-- Window -->
+  <rect class="bg" width="850" height="320" rx="12"/>
+  <rect class="titlebar" width="850" height="40" rx="12"/>
+  <rect class="titlebar" y="12" width="850" height="28"/>
+
+  <!-- Traffic lights -->
+  <circle cx="24" cy="20" r="6" fill="#ff5f57"/>
+  <circle cx="44" cy="20" r="6" fill="#febc2e"/>
+  <circle cx="64" cy="20" r="6" fill="#28c840"/>
+  <text x="425" y="25" class="title" text-anchor="middle">sanskriti@github — zsh</text>
+
+  <!-- $ neofetch -->
+  <g class="l l1">
+    <text x="28" y="70" class="text prompt">$</text>
+    <text x="44" y="70" class="text cmd">neofetch</text>
+  </g>
+
+  <!-- Username -->
+  <g class="l l2">
+    <text x="28" y="100" class="text accent">sanskriti</text>
+    <text x="114" y="100" class="text muted">@</text>
+    <text x="126" y="100" class="text accent">github</text>
+  </g>
+
+  <!-- Separator -->
+  <g class="l l3">
+    <text x="28" y="118" class="text sep">─────────────────────────────────</text>
+  </g>
+
+  <!-- Info lines -->
+  <g class="l l4">
+    <text x="28" y="140" class="text key">▸ Role</text>
+    <text x="188" y="140" class="text val">AI Engineer &amp; Full-Stack Developer</text>
+  </g>
+
+  <g class="l l5">
+    <text x="28" y="162" class="text key">▸ Education</text>
+    <text x="188" y="162" class="text val">B.Tech CSE @ Bharati Vidyapeeth (DU), Pune</text>
+  </g>
+
+  <g class="l l6">
+    <text x="28" y="184" class="text key">▸ CGPA</text>
+    <text x="188" y="184" class="text val">■■■■■■■■■□ 9.47 / 10</text>
+  </g>
+
+  <g class="l l7">
+    <text x="28" y="206" class="text key">▸ Focus</text>
+    <text x="188" y="206" class="text val">Agentic RAG · Multi-Agent Orchestration · LangGraph</text>
+  </g>
+
+  <g class="l l8">
+    <text x="28" y="228" class="text key">▸ Building</text>
+    <text x="188" y="228" class="text val">Autonomous AI agents that ship to production</text>
+  </g>
+
+  <g class="l l9">
+    <text x="28" y="250" class="text key">▸ Shell</text>
+    <text x="188" y="250" class="text val">Python 3.11 · Node.js · Java</text>
+  </g>
+
+  <!-- Color palette -->
+  <g class="l l10">
+    <rect x="28" y="268" width="22" height="14" rx="2" fill="#0d1117" stroke="#484f58"/>
+    <rect x="56" y="268" width="22" height="14" rx="2" fill="#da3633"/>
+    <rect x="84" y="268" width="22" height="14" rx="2" fill="#7ee787"/>
+    <rect x="112" y="268" width="22" height="14" rx="2" fill="#d29922"/>
+    <rect x="140" y="268" width="22" height="14" rx="2" fill="#58a6ff"/>
+    <rect x="168" y="268" width="22" height="14" rx="2" fill="#bc8cff"/>
+    <rect x="196" y="268" width="22" height="14" rx="2" fill="#39d353"/>
+    <rect x="224" y="268" width="22" height="14" rx="2" fill="#c9d1d9"/>
+  </g>
+
+  <!-- Blinking cursor prompt -->
+  <g class="l l11">
+    <text x="28" y="305" class="text prompt">$</text>
+    <rect x="44" y="292" width="9" height="17" rx="2" fill="#c9d1d9" class="cursor"/>
+  </g>
+</svg>
