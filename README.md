@@ -28,7 +28,7 @@
 <tr>
 <td width="50%">
 
-**[Text-to-SQL Agent for Sales Ops]([https://github.com/sanskritiii025](https://github.com/sanskritiii025/TEXT-TO-SQL-AGENT.git))** &nbsp; `Jan 2026`
+**[Text-to-SQL Agent for Sales Ops](https://github.com/sanskritiii025/TEXT-TO-SQL-AGENT.git)** &nbsp; `Jan 2026`
 
 `Python` `LangGraph` `GPT-4` `PostgreSQL` `ChromaDB`
 
